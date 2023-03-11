@@ -1,0 +1,33 @@
+.qp{
+    border-bottom:250px solid green;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    position:relative;
+    margin-left:680px;
+    top:0px;
+    animation-name:glow;
+    animation-duration:2000ms;
+    animation-iteration-count:infinite;
+}
+@keyframes glow{
+    0%{
+        border-bottom:250px solid #9a1e41;
+        transform:scale(1);
+    }
+    25%{
+        border-bottom:250px solid #d64f80;
+        transform:scale(1.2);
+    }
+    50%{
+        border-bottom:250px solid #d66b92;
+        transform:scale(1);
+    }
+    75%{
+        border-bottom:250px solid #d64f80;
+        transform:scale(1.2);
+    }
+    100%{
+        border-bottom:250px solid #9a1e41;
+        transform:scale(1);
+    }
+}

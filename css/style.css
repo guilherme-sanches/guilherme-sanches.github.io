@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+    line-height:1.5em;
+}
+body{
+    background-color:#FF99FF;
+}
+hr{
+    display:flex;
+    border:2px dashed #aa1e41;
+    width:50%;
+    text-align:center;
+    margin:auto;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.texto-padrao{
+    background-color: aquamarine;
+    border-radius:20px;
+    text-align:center;
+    font-weight:normal;
+    font-size:30px;
+    margin:50px 30px;
+}
+h4.texto-padrao{
+    font-size:1.7em;
+    background-color: rgba(0,0,0,0);
+    margin-top:-20px;
+    margin-left:50px;
+    margin-right:50px;
+}
+h5{
+    font-size: 15px;
+}
+#cabecalho{
+    font-size:35px;
+    text-align:center;
+}
+#cabecalho p{
+    font-size:0.7em;
+}
+#cabecalho h2{
+    margin-top:30px;
+    font-size:1.5em;
+}
+.menu{
+    position:fixed;
+    bottom: 0px;
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    background:#ff6b90;
+    width: 100%;
+    height:50px;
+    margin: auto;
+    z-index:2;
+    animation-name:menu;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+@keyframes menu{
+    0%{
+        background-color:#ff6b90;
+    }
+    25%{
+        background-color:#fc4c78;
+    }
+    50%{
+        background-color:#9526fd;
+    }
+    75%{
+        background-color:#fc4c78;
+    }
+    100%{
+        background-color:#ff6b90;
+    }
+}
+.menu a{
+    font-family: 'Indie Flower', cursive;
+    font-size:17px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:1000;
+    color:black;
+    padding:15px;
+    transition: background-color 750ms, outline 200ms;
+    width:250px;
+}
+.menu a:hover{
+    background-color:aqua;
+    color:black;
+    outline:2px solid #aa1e41;
+}
+#rotulo{
+    text-align:center;
+    margin-top:10px;
+    font-size:12px;
+}
+.grade-de-card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 200px;
+}
+.card{
+    background-color:#ffceda;
+    width: 300px;
+    height:300px;
+    margin-top:px;
+    margin-bottom:30px;
+    border:3px solid #ff648b;
+    border-radius:20px;
+    box-shadow: 10px 10px 5px 1px rgb(173, 22, 22);
+    transition: box-shadow 500ms;
+    overflow:hidden;
+}
+.card:hover{
+    box-shadow: 10px 10px 15px 5px rgb(152, 27, 255);
+    overflow:auto;
+}
+.cardcontent{
+    text-align:justify;
+    margin:7px 15px;
+    line-height: 20px;
+}
+#caixa-azul{
+    background-color: blue;
+    position: relative;
+    bottom: 0px;
+    left: 1350px;
+    height: 100px;
+    width: 100px;
+}
+#caixa-verde{
+    background-color: green;
+    position: relative;
+    left:1375px;
+    bottom: 75px;
+    height: 50px;
+    width: 50px;
+}
+.texto-caixas{
+    text-align: justify;
+    color: green;
+    position: relative;
+    width: 150px;
+    left: 1180px;
+    bottom: 130px;
+}
+#caixa-amarela{
+    background-color:rgb(255, 255, 0, 0.5);
+    height:100px;
+    width:100px;
+    position:relative;
+    left:750px;
+    z-index:1;
+}
+#caixa-roxa{
+    background-color:rgb(128, 0, 128);
+    height:100px;
+    width:100px;
+    position:relative;
+    bottom:50px;
+    left:800px;
+}
+.gato{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:60px;
+    margin:0 auto;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.gato img{
+    height: 500px;
+    border-radius:50px;
+    outline:rgb(173, 22, 22) 4px dotted;
+    animation-name: bordagato;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bordagato{
+    0%{
+        outline:red 6px dotted;
+    }
+    50%{
+        outline:blue 8px dotted;
+    }
+}
+#lua-crescente{
+    position:relative;
+    left:50%;
+    background-color:transparent;
+    border-radius:50%;
+    height:150px;
+    width:150px;
+    box-shadow:-20px 5px 0px 0px white;
+    margin-bottom:50px;
+    margin-top:-30px;
+}
+#meia-lua{
+    position:relative;
+    left:44%;
+    background-color:transparent;
+    border-radius:50%;
+    height:150px;
+    width:150px;
+    transform:rotate(-25deg);
+    box-shadow:50px 0 white;
+    margin-bottom:50px;
+    margin-top:50px;
+}
+.tabelas{
+    display:flex;
+    flex-direction:row;
+}
+table{
+    border:1px white dashed;
+    margin:0 auto;
+    text-align:center;
+    padding:0.4%;
+    height:100%;
+}
+table td{
+    padding:0.4%;
+    border-top:1px white solid;
+}
+table caption{
+    font-family:monospace;
+}
+table tr{
+    padding:0.4%;
+}
