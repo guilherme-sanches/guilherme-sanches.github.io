@@ -305,10 +305,10 @@
     
     <script>
         const produtos = [
-            { nome: 'Produto A', custo: 0, entrada: 0, precoVenda: 0 },
-            { nome: 'Produto B', custo: 0, entrada: 0, precoVenda: 0 },
-            { nome: 'Produto C', custo: 0, entrada: 0, precoVenda: 0 },
-            { nome: 'Produto D', custo: 0, entrada: 0, precoVenda: 0 }
+            { nome: 'Carga Rápida', custo: 0, entrada: 0, precoVenda: 0 },
+            { nome: 'Alho', custo: 0, entrada: 0, precoVenda: 0 },
+            { nome: 'Torresmo', custo: 0, entrada: 0, precoVenda: 0 },
+            { nome: 'Peixe', custo: 0, entrada: 0, precoVenda: 0 }
         ];
         
         let vendas = [];
@@ -627,5 +627,11 @@ function carregarDados() {
         renderizarVendas();
         atualizarResumo();
     </script>
+	
+	<button onclick="localStorage.clear(); location.reload();">
+🗑️ Limpar todos os dados
+</button>
+
+	
 </body>
 </html>
